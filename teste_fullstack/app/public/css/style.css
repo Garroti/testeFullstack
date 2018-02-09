@@ -1,0 +1,44 @@
+body{
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+#topo{
+	background-color: #87CEEB;
+	margin-bottom: 100px;
+}
+
+h2{
+	text-align: center;
+	color: white;
+}
+
+.branco{
+	text-align: center;
+	color: white;
+}
+
+#btn-enviar{
+	background-color: #87CEEB;
+	border-color: white;
+}
+
+h3, p{
+	text-align: center;
+}
+
+.tabela{
+	width: 90%;
+	border-color: #D3D3D3;
+	border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Teste</title>
+		<!-- JQuery -->
+		<script src="js/jquery-2.2.1.js"></script>
+
+		<!-- VueJS -->
+		<script src="js/vue.min.js"></script>
+
+		<!-- ChartJS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+		
+		<!-- bootstrap - link cdn -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+		<!-- incluindo css -->
+		<link href="css/style.css" rel="stylesheet">
+
+	</head>
+
+	<body>
+
+		<div id="app">
+		
+			<div id="topo">
+				
+				<div id="topo" class="container">
+
+					<h2>{{ H2 }}</h2>
+					<p class="branco">{{ P1 }}</p>
+
+					<div class="row">
+						
+						<div class="panel-body">
+
+							<div class="col-md-3">
+								<div class="form-group">
+									<input type="text" name="nome" id="nome" class="form-control" placeholder="Nome" autocomplete="off">
+								</div>
+							</div>
+
+							<div class="col-md-3">
+								<div class="form-group">
+									<input type="text" name="sobrenome" id="sobrenome" class="form-control" placeholder="Sobrenome" autocomplete="off">
+								</div>
+							</div>
+
+							<div class="col-md-3">
+								<div class="form-group">
+									<input type="number" name="participacoes" id="participacoes" class="form-control" placeholder="Participações" v-model.number="participacoes">
+								</div>
+							</div>
+							
+							<div class="col-md-3">
+								<div class="form-group">
+									<button class="btn btn-primary" id="btn-enviar">ENVIAR</button>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+					
+				</div>
+
+			</div>
+
+			<div style="margin-bottom: 100px;" class="container">
+
+
+				<h3>{{ H3 }}</h3>
+				<p style="margin-bottom: 80px;">{{ P2 }}</p>
+					
+				<div class="row">
+						
+					<div class="col-md-6">
+
+						<ga-tabela id="pessoas" v-bind:titulos="head"></ga-tabela>
+
+					</div>
+
+					<div class="col-md-6">
+
+						<canvas id="chart"></canvas>
+						
+					</div>
+
+				</div>
+		
+
+			</div>
+
+		</div>
+
+		<script src="js/scripts.js"></script>
+
+	</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
